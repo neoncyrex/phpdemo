@@ -19,4 +19,4 @@
      copy: src=./ dest=/var/www/html
 
    - name: Configure database access
-     template: src=dbvars.php.j2 dest=/var/www/html/dbvars.php
+     template: src=templates/dbvars.php.j2 dest=/var/www/html/dbvars.php
