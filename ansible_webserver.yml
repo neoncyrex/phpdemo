@@ -16,7 +16,7 @@
      service: name=httpd state=started enabled=true
 
    - name: Copy application files
-     copy: src=./ dest=/var/www/html
+     copy: src=./src/ dest=/var/www/html
 
    - name: Configure database access
      template: src=templates/dbvars.php.j2 dest=/var/www/html/dbvars.php
