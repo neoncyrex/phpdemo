@@ -5,7 +5,6 @@
   vars_files:
    - dbparams.yml
   tasks:
-   - debug: var=dbuser
    - name: Install required packages
      yum: name={{item}} state=installed
      with_items:
